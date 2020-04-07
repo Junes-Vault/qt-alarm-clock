@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Window</class>
+ <widget class="QMainWindow" name="Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Alarm</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/MyLogo.png</normaloff>:/MyLogo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox
+{
+	border: 1px solid #7AEE3C;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    color: #329000;
+}
+
+QLCDNumber
+{
+	color: #990021;
+}
+
+QLCDNumber:disabled
+{
+	color: #F56E8B;
+	opacity: 0.4;
+}
+
+QPushButton
+{
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #99EE6B;
+	color: #329000;
+}
+
+QPushButton:hover
+{
+	background-color: #99EE6B;
+}
+
+QPushButton:pressed, QPushButton:checked
+{
+	background-color: #7AEE3C;
+}
+
+QSlider::groove:vertical
+{
+	width: 1px;
+	background-color: #B12C49;
+}
+
+QSlider::handle:vertical
+{
+	border-radius: 5px;
+	background-color: #4DDE00;
+	height: 11px;
+	margin: 0 -5px; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+}
+
+QSlider::handle:vertical:hover
+{
+	background-color: #99EE6B;
+}
+
+QSlider::handle:vertical:pressed
+{
+	background-color: #329000;
+}
+
+#centralWidget
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="centralWidgetLayout">
+    <property name="leftMargin">
+     <number>1</number>
+    </property>
+    <property name="topMargin">
+     <number>1</number>
+    </property>
+    <property name="rightMargin">
+     <number>1</number>
+    </property>
+    <property name="bottomMargin">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="QStackedWidget" name="screenStack"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

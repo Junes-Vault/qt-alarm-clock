@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="sound">resources/sounds/morningBugle.wav</file>
+        <file alias="gplLogo">resources/logo/gplv3.png</file>
+        <file alias="appLogo">resources/logo/MyLogo.png</file>
+    </qresource>
+</RCC>
